@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LRCollectionViewCell" id="TyE-tw-6Nt" customClass="LRCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="155" height="222"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="155" height="222"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="苹果设备分辨率" translatesAutoresizingMaskIntoConstraints="NO" id="gGw-vr-Mq0">
+                        <rect key="frame" x="0.0" y="0.0" width="155" height="183"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="183" id="fwZ-IF-Oaz"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MMBB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWe-Bt-5HV">
+                        <rect key="frame" x="0.0" y="183" width="155" height="39"/>
+                        <color key="backgroundColor" red="1" green="0.02769411393" blue="0.13082732729999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="pWe-Bt-5HV" secondAttribute="bottom" id="3Ht-3r-wRk"/>
+                <constraint firstItem="gGw-vr-Mq0" firstAttribute="top" secondItem="TyE-tw-6Nt" secondAttribute="top" id="Bap-Xc-zJR"/>
+                <constraint firstItem="pWe-Bt-5HV" firstAttribute="leading" secondItem="TyE-tw-6Nt" secondAttribute="leading" id="J1E-Vp-dd7"/>
+                <constraint firstAttribute="trailing" secondItem="gGw-vr-Mq0" secondAttribute="trailing" id="M9w-R2-Piz"/>
+                <constraint firstAttribute="trailing" secondItem="pWe-Bt-5HV" secondAttribute="trailing" id="axk-O0-ciW"/>
+                <constraint firstItem="gGw-vr-Mq0" firstAttribute="leading" secondItem="TyE-tw-6Nt" secondAttribute="leading" id="xcA-k1-KGU"/>
+                <constraint firstItem="pWe-Bt-5HV" firstAttribute="top" secondItem="gGw-vr-Mq0" secondAttribute="bottom" id="zkW-mN-LGD"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ces-2g-PVo"/>
+            <size key="customSize" width="214" height="279"/>
+            <connections>
+                <outlet property="iconView" destination="gGw-vr-Mq0" id="Awj-sb-iR0"/>
+                <outlet property="nameLab" destination="pWe-Bt-5HV" id="d6u-ja-dst"/>
+            </connections>
+            <point key="canvasLocation" x="-23.5" y="104"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="苹果设备分辨率" width="548" height="382"/>
+    </resources>
+</document>
